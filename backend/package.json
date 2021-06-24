@@ -1,0 +1,45 @@
+{
+  "name": "serverless-evently",
+  "version": "1.0.0",
+  "description": "Serverless Event management app",
+  "scripts": {
+    "deploy": "sls deploy -v",
+    "deploy:local": "sls offline",
+    "dynamodb:install": "sls dynamodb install",
+    "sls:offline": "IS_OFFLINE=true sls offline start"
+  },
+  "dependencies": {
+    "aws-serverless-express": "^3.3.6",
+    "aws-xray-sdk": "^2.3.3",
+    "elasticsearch": "^15.5.0",
+    "express": "^4.17.1",
+    "http-aws-es": "^6.0.0",
+    "jimp": "^0.6.4",
+    "jsonwebtoken": "^8.5.1",
+    "middy": "^0.25.0",
+    "source-map-support": "^0.5.11",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.28",
+    "@types/elasticsearch": "^5.0.34",
+    "@types/jest": "^24.0.15",
+    "@types/jsonwebtoken": "^8.3.2",
+    "@types/node": "^10.14.12",
+    "aws-sdk": "^2.492.0",
+    "serverless-aws-documentation": "^1.1.0",
+    "serverless-bundle": "^4.3.1",
+    "serverless-dynamodb-local": "^0.2.39",
+    "serverless-iam-roles-per-function": "^3.2.0-e97ab49",
+    "serverless-offline": "^7.0.0",
+    "serverless-plugin-canary-deployments": "^0.4.8",
+    "serverless-reqvalidator-plugin": "^1.0.3",
+    "serverless-webpack": "^5.5.1",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.5.3",
+    "webpack": "^5.39.1",
+    "winston": "^3.3.3"
+  },
+  "author": "Rowland Ekemezie",
+  "license": "MIT"
+}
