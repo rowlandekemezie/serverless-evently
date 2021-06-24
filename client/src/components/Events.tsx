@@ -104,7 +104,7 @@ export class Events extends React.PureComponent<EventsProps, EventsState> {
   render() {
     return (
       <div>
-        <Header as="h1">EVENTs</Header>
+        <Header as="h1">My EVENTs</Header>
 
         {this.renderCreateEventInput()}
 
@@ -150,7 +150,7 @@ export class Events extends React.PureComponent<EventsProps, EventsState> {
     return (
       <Grid.Row>
         <Loader indeterminate active inline="centered">
-          Loading EVENTs
+          Loading My EVENTs
         </Loader>
       </Grid.Row>
     )
